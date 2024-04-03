@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body class="login_body">
+    <form id="loginForm">
+        <label for="username">Username/Email:</label>
+        <input type="text" id="usernameLogin" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="passwordLogin" name="password" required>
+        <div class="box_terms">
+            <div style="padding-right: 4px">
+              <input type="checkbox" id="termsCheckbox" name="termsCheckbox" />
+            </div>
+            <div style="padding-top: 1.5px">
+              <label style="font-size: smaller" for="termsCheckbox"
+                >Click if you want to Login as a Mentor.
+              </label>
+            </div>
+          </div>
+        
+        <button class="button" type="submit">Login</button>
+    </form>
+    <div id="loginError"></div>
+
+    <script src="LoginScript.js"></script>
+</body>
+</html>
